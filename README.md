@@ -69,25 +69,6 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to play the game.
 
-## Deployment to Netlify
-
-This project is configured for easy deployment to Netlify:
-
-1. Push your code to a GitHub repository
-2. Sign up for [Netlify](https://www.netlify.com/)
-3. Create a new site from Git and select your repository
-4. Use the following settings:
-   - Build command: `npm run build`
-   - Publish directory: `.next`
-5. Click "Deploy site"
-
-Alternatively, you can use the Netlify CLI:
-
-```bash
-npm install -g netlify-cli
-netlify login
-netlify deploy --prod
-```
 
 ## License
 
