@@ -137,9 +137,9 @@ const DiceGame: React.FC = () => {
       const savedHistory = localStorage.getItem('gameHistory');
       if (savedHistory) {
         try {
-          const parsedHistory = JSON.parse(savedHistory);
+          const parsedHistory = JSON.parse(savedHistory) as (Omit<GameHistoryItem, 'timestamp'> & { timestamp: string })[];
           // Restore Date objects which were serialized
-          const history = parsedHistory.map((item: any) => ({
+          const history = parsedHistory.map((item) => ({
             ...item,
             timestamp: new Date(item.timestamp)
           }));
