@@ -1,3 +1,5 @@
+Live-https://stake-dice.vercel.app/
+
 # Provably Fair Dice Game
 
 A simple dice game with provably fair mechanics built with Next.js, featuring a modern slider-based UI.
